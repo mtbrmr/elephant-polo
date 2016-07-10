@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('dob');
             $table->string('country');
-            $table->string('passport_number');
+            $table->string('passport_number')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
